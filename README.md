@@ -1,9 +1,6 @@
-# Zartema
-A [Waterfall](https://github.com/PaperMC/Waterfall) fork.
+# Lothium
+A [Zartema]([https://github.com/PaperMC/Waterfall](https://github.com/souamari/Zartema)) fork.
 Made for my personal use.
-
-1.7.x support from an old Travertine patch (which has been discontinued): https://github.com/PaperMC/Travertine/blob/master/Waterfall-Proxy-Patches/0003-1.7.x-Protocol-Patch.patch
-
 
 Special Thanks To:
 -------------
