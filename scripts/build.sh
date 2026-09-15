@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-git submodule update --init --recursive && ./scripts/applyPatches.sh
+BASEDIR="$(cd "$(dirname "$0")/.." && pwd -P)"
+
+git submodule update --init --recursive && "$BASEDIR/scripts/applyPatches.sh" "$BASEDIR"
 
 if [ "$1" == "--jar" ]; then
-     pushd ./Zartema-Proxy
-     mvn clean package
-     popd
+    pushd "$BASEDIR/Lothus-Proxy"
+    mvn clean package
+    popd
 fi

@@ -60,17 +60,17 @@ if [[ "$gpgsign" == "true" ]]; then
     git config --global commit.gpgsign false
 fi
 
-executedir=$basedir
+executedir="$basedir"
 
 # Apply upstream patches
-pushd Waterfall
-basedir=$executedir/Waterfall
+pushd "$executedir/Waterfall"
+basedir="$executedir/Waterfall"
 applyPatch BungeeCord Waterfall-Proxy HEAD
 popd
 
-basedir=$executedir
+basedir="$executedir"
 
-applyPatch Waterfall/Waterfall-Proxy Zartema-Proxy HEAD
+applyPatch Waterfall/Waterfall-Proxy Lothus-Proxy HEAD
 
 # Apply waterfall patches
 enableCommitSigningIfNeeded
