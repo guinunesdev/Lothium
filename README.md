@@ -1,5 +1,5 @@
 # Lothium
-A [Zartema]([https://github.com/PaperMC/Waterfall](https://github.com/souamari/Zartema)) fork.
+A [Zartema](https://github.com/souamari/Zartema) fork.
 Made for my personal use.
 
 Special Thanks To:
